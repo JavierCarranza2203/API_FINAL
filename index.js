@@ -21,7 +21,7 @@ const swaggerOptions = {
         },
         servers: [
         {
-            url: "http://localhost:3000",
+            url: "https://apifinal-javiercarranza.up.railway.app/apifinal-javiercarranza.up.railway.app",
         },
         ],
         components: {
