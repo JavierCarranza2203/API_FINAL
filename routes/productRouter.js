@@ -261,12 +261,12 @@ productRouter.delete('/', authController.ValidateToken, async(req, res, next) =>
  *                 example: "Camiseta nueva"
  *               precio:
  *                 type: number
- *                 format: float
- *                 example: 19.99
+ *                 format: number
+ *                 example: 19
  *               descripcion:
  *                 type: string
- *                 example: "Camiseta 100% algodón"
- *               stock:
+ *                 example: "Camiseta algodón"
+ *               cantidad:
  *                 type: integer
  *                 example: 25
  *     responses:
@@ -294,7 +294,7 @@ productRouter.patch('/:id', authController.ValidateToken, async(req, res, next) 
         if(!req.params.id) res.status(400).json({ message: "El id debe especificarse" });
         await productController.Update(req.body, req.params.id);
 
-        res.status(200).json({ message: "El producto con id " + req.params.id + " se ha actualizaco." });
+        res.status(200).json({ message: "El producto con id " + req.params.id + " se ha actualizado." });
     }
     catch(error) {
         if(error instanceof ErrorObject) error.EndPoint = req.url;

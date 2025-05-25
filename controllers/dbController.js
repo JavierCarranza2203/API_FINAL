@@ -71,7 +71,7 @@ export default class dbController {
             throw new Error('La tabla no existe');
         }
 
-        if (columns.length === 0 || params.length === 0 || columns.length !== params.length) {
+        if (columns.length === 0 || params.length === 0) {
             throw new Error('Columnas y parámetros no válidos');
         }
 
