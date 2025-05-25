@@ -18,7 +18,7 @@
   },
   "type": "module",
   "scripts": {
-    "start": "node --env-file=config/.env index.js",
+    "start": "node index.js",
     "compile": "npx tsc --project tsconfig.json"
   }
 }
