@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "module": "ESNext",
+        "outDir": "models/dist",
+        "allowJs": true,
+        "declaration": true,
+        "moduleResolution": "Node"
+    },
+    "include": ["models/*"],
+    "exclude": ["models/dist"]
+}
