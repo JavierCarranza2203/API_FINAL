@@ -21,7 +21,7 @@ const swaggerOptions = {
         },
         servers: [
         {
-            url: "https://apifinal-javiercarranza.up.railway.app/apifinal-javiercarranza.up.railway.app",
+            url: "https://apifinal-javiercarranza.up.railway.app/",
         },
         ],
         components: {
